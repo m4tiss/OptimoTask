@@ -44,7 +44,7 @@ html,body {
     display: flex;
     gap:40px;
     transform-origin: center;
-    transform: rotate(-50deg);
+    animation: animationSquares 1s ease-in-out forwards;
 }
 .square{
     width: 10vw;
@@ -60,6 +60,7 @@ html,body {
     align-items: center;
     height: 20vh;
     padding-top: 20%;
+    animation: animationCircleAndLines 1s ease-in-out;
 }
 .lines{
     height: 100%;
@@ -91,6 +92,7 @@ html,body {
     justify-content: center;
     padding-top: 20px;
     border: black solid 2px;
+    animation: animationAbc 1s ease-in-out;
 }
 @media (max-width: 900px) {
     .shapeContainer{
@@ -153,5 +155,34 @@ html,body {
     }
     .abc{
         background-color: #0000ff;
+    }
+}
+
+@keyframes animationSquares {
+    0% {
+        transform: rotate(-160deg);
+    }
+    100% {
+        transform: rotate(-50deg);
+    }
+}
+
+@keyframes animationCircleAndLines {
+    0% {
+        transform: translateY(50px); 
+    }
+    70% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes animationAbc {
+    0% {
+        transform: scale(0.5); 
+    }
+    100% {
+        transform: scale(1); 
     }
 }
