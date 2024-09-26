@@ -129,3 +129,29 @@ html,body {
         background-color: #c83737;
     }
 }
+
+@media (max-width: 583px) {
+    .main {
+        flex-direction: column;
+    }
+    .squaresConatiner{
+        padding-top: 17%;
+        justify-content: center;
+        
+    }
+    .circleAndLines{
+        justify-content: start;
+    }
+    .line{
+        width: 35vw;
+    }
+    .circle{
+        width: 30vw;
+    }
+    .abcContainer{
+       justify-content: center;
+    }
+    .abc{
+        background-color: #0000ff;
+    }
+}
